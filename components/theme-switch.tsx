@@ -22,7 +22,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
   const isSSR = useIsSSR();
 
 	const onChange = () => {
-		theme === "light" ? setTheme("dark") : setTheme("light");
+		theme === "light" ? setTheme("light") : setTheme("light");
 	};
 
 	const {
@@ -34,7 +34,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
 		getWrapperProps,
 	} = useSwitch({
 		isSelected: theme === "light",
-    "aria-label": `Switch to ${theme === "light" ? "dark" : "light"} mode`,
+    "aria-label": `Switch to ${theme === "light" ? "light" : "light"} mode`,
 		onChange,
 	});
 

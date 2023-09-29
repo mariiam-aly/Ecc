@@ -1,11 +1,11 @@
-export default function AboutLayout({
+export default function DocsLayout({
 	children,
 }: {
 	children: React.ReactNode;
 }) {
 	return (
-		<section>
-			<div >
+		<section >
+			<div>
 				{children}
 			</div>
 		</section>

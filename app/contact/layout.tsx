@@ -1,10 +1,10 @@
-export default function AboutLayout({
+export default function BlogLayout({
 	children,
 }: {
 	children: React.ReactNode;
 }) {
 	return (
-		<section>
+		<section >
 			<div >
 				{children}
 			</div>
