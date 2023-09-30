@@ -20,7 +20,7 @@ export default function AboutPage() {
 </div>
 </div>
 	
-		<div className="about container">
+		<div className="about container-ecc ">
 		
 		<div className="about-header">
 

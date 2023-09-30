@@ -1,5 +1,12 @@
 import { title } from "@/components/primitives";
 import contactUs from '../../components/Images/contact.png'
+
+import Image from "next/image";
+
+import clock from '../../components/Images/clock.png'
+import map from '../../components/Images/map.png'
+import egyflag from '../../components/Images/egyflag.svg'
+
 export default function contact() {
 	return (
 		
@@ -12,7 +19,9 @@ export default function contact() {
 </div>
 </div>
 
-<div className="contactUs container" style={{marginTop:"86px"}}>
+
+
+<div className="contactUs container-ecc " style={{marginTop:"86px"}}>
 <div className="container-fluid">
 
 
@@ -21,22 +30,32 @@ export default function contact() {
 <p  className="title-sm">  خدماتنا</p>
 <p className="title-lg" >  تواصل معنا! </p>
 <p className="div1Det">في المركز الاستشاري المصري، نقدم مجموعة شاملة من الخدمات المالية المصممة لدعم نمو أعمالك.</p>
+
+<Image 
+width={26}
+height={26}
+src={clock} alt="اوقات العمل"/>
+
 <p className="contact-title">اوقات العمل</p>
 <p className="contact-txt">يومياً من<span> الخميس </span> الى  <span>السبت</span> </p>
 <p className="contact-txt contact-margin ">من الساعة<span> السادسة مساءاً </span> الى الساعة <span> التاسعة صباحاً </span> </p>
+
+
+<Image 
+width={26}
+height={26}
+src={map} alt="العنوان"/>
 
 <p className="contact-title">العنوان</p>
 <p className="contact-txt2">110 عمارات مدينة الفتح - شارع جمال سليم - حى السفارات - مدينة نصر - القاهرة</p>
 
 </div>
 <div className="col-5">
-<div className="contact-input contact-input-div1">
+<div className="contact-input ">
 	<div>
-<label>الاسم الاول</label>
+<label>الاسم </label>
 <input/></div>
-<div >
-<label>الاسم الاخير</label>
-<input/></div>
+
 </div>
 
 <div className="contact-input contact-input-div2">
@@ -45,8 +64,11 @@ export default function contact() {
 	
 <input/>
 
+
 	<p>+20
 		</p>
+		<Image style={{marginRight:"8px"}}  src={egyflag} alt="Egypt flag"/>
+
 </div>
 </div>
 
@@ -69,7 +91,9 @@ export default function contact() {
 </div>
 </div>
 
-</div>		</div>
+</div>
+
+</div>		
 	);
 }
  

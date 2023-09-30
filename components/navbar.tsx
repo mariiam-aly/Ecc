@@ -11,7 +11,7 @@ export const Navbar = () => {
 	</div>
 	<div  className="navSticky" >
 
-		<nav className="container" >
+		<nav className="container-ecc " >
 			<div style={{display:"flex",alignItems:"center"}}>
 
 		
@@ -29,13 +29,17 @@ src={logo} alt="المركز الإستشاري المصري"/>
 
 			<div>
 
-			<Link style={{marginLeft:"0"}} href="/services"> 
+			
+
+			<Link href="/contact" style={{marginLeft:"0"}} > 
+			تواصل معنا</Link>
+
+			<Link href="/services"> 
 			خدماتنا
 			</Link>
-
 			<Link href="/about">   من نحن </Link>
-			<Link href="/contact"> 
-			تواصل معنا</Link>
+
+
 			<Link href="/"> 
 			الرئيسية
 			</Link>
@@ -47,7 +51,7 @@ src={logo} alt="المركز الإستشاري المصري"/>
 			</div>
 
 			<div className="socials">
-				<p>تابعنا من خلال</p>
+				<p>تواصل معنا من خلال</p>
 				<span></span>
 				<a href="/">201029339203+</a>
 

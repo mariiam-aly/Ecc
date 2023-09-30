@@ -18,12 +18,22 @@ import load from '../components/Images/load.svg'
 import clock from '../components/Images/clock.png'
 import map from '../components/Images/map.png'
 import egyflag from '../components/Images/egyflag.svg'
+import triangle from '../components/Images/triangle.png'
+import fluency from '../components/Images/fluency.png'
 
 export default function Home() {
 	return (
 		
 		<div >
-			<div className="div1-padding container">
+			<div className="container-fluid">
+
+<div className="row">
+
+<div className="col-8  ">
+<div className="alignVertical div1-padding container-ecc">
+
+
+
 
 			<p className="title-sm">المركز الإستشاري المصري</p>
 			<p className="title-lg"><span>ال</span>مركز الإستشاري المصري</p>
@@ -38,7 +48,19 @@ export default function Home() {
 </svg>
 </button>
 
-			</div>
+		
+
+
+</div></div></div>
+<div className="col-4 firstDiv-img">
+<div  style={{ backgroundImage: `url(${triangle.src})`}}>
+		
+	</div>
+	<Image src={fluency} alt="fluency"/>
+</div>
+
+<div className="container-ecc first-company">
+
 
 <div className=" companyImages-container">
 <div className="row companyImages">
@@ -68,15 +90,15 @@ src={c3} alt="Sila"/>
 width={134}
 height={144}
 src={c4} alt="Dar Al Ashaa"/>
-
 </div>
 </div>
 </div>
-			</div>
+</div>
+</div>	</div>
 
 
 <div className="services" style={{ backgroundImage: `url(${background.src})`}}>
-<div className="container">
+<div className="container-ecc ">
 
 <p className="title-sm">  خدماتنا</p>
 <p className="title-lg" >المركز الإستشاري المصري</p>
@@ -186,7 +208,7 @@ src={c4} alt="Dar Al Ashaa"/>
 </button>	</div>
 </div></div>
 </div>			</div>
-<div className="history container">
+<div className="history container-ecc ">
 <p  className="title-sm">  خدماتنا</p>
 <p className="title-lg" >  من نحن</p>
 <p className="div1Det">تأسست المركز الاستشاري المصري في ١٩٩٨, وقد اكتسب سمعة ممتازة في تقديم خدمات الاستشارات المالية ذات الجودة العالية. هدفنا هو تقديم حلول مبتكرة وشخصية لتحديات عملائنا المالية. يتألف فريقنا من محترفين متفانين لديهم خبرة واسعة وقادرون على تقديم حلول شاملة. نحن متخصصون في الخدمات مثل التدقيق المالي، الخدمات المحاسبية، تأسيس الشركات، الدراسات الجدوى، تمويل المشروعات، والاستشارات الضريبية. نحن ندرك أن كل عمل تجاري فريد من نوعه، ولذلك نقدم خدماتنا وفقًا لاحتياجات كل عميل، مع تقديم استراتيجيات عملية تؤدي إلى نتائج ملموسة. في المركز الاستشاري المصري، نعتبر عملائنا شركاء لنا، حيث نعمل معاً نحو هدف مشترك - نجاحك. كشركائك، نعد بتوجيهك من خلال التعقيدات المالية، وتوفير الوضوح ومساعدتك في اتخاذ القرارات المستنيرة. نتطلع إلى أن نكون شريكك الموثوق في تحقيق أهدافك المالية.</p>
