@@ -12,7 +12,7 @@ export default function DocsPage() {
 </div>
 </div>
 		
-		<div className="services-container">
+		<div className="container-ecc">
 			
 			
 			<div className="services-body">

@@ -1,9 +1,11 @@
 
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../components/Images/Logo.png"
+import { usePathname } from "next/navigation"
 export const Navbar = () => {
-	
+	const pathname = usePathname();
 	return (
 	<>
 	<div className="navigatioTop">
@@ -31,16 +33,16 @@ src={logo} alt="المركز الإستشاري المصري"/>
 
 			
 
-			<Link href="/contact" style={{marginLeft:"0"}} > 
+			<Link className={pathname == "/contact" ? "active" : ""} href="/contact" style={{marginLeft:"0"}} > 
 			تواصل معنا</Link>
 
-			<Link href="/services"> 
+			<Link className={pathname == "/services" ? "active" : ""} href="/services"> 
 			خدماتنا
 			</Link>
-			<Link href="/about">   من نحن </Link>
+			<Link className={pathname == "/about" ? "active" : ""} href="/about">   من نحن </Link>
 
 
-			<Link href="/"> 
+			<Link className={pathname == "/" ? "active" : ""} href="/"> 
 			الرئيسية
 			</Link>
 			

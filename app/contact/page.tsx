@@ -27,9 +27,9 @@ export default function contact() {
 
 <div className="row gy-5">
 <div className="col-7">
-<p  className="title-sm">  خدماتنا</p>
-<p className="title-lg" >  تواصل معنا! </p>
-<p className="div1Det">في المركز الاستشاري المصري، نقدم مجموعة شاملة من الخدمات المالية المصممة لدعم نمو أعمالك.</p>
+<h3>  خدماتنا</h3>
+<h1>  تواصل معنا! </h1>
+<h2>في المركز الاستشاري المصري، نقدم مجموعة شاملة من الخدمات المالية المصممة لدعم نمو أعمالك.</h2>
 
 <Image 
 width={26}
