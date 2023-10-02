@@ -14,7 +14,10 @@ export const Navbar = () => {
 	<div  className="navSticky" >
 
 		<nav className="container-ecc " >
-			<div style={{display:"flex",alignItems:"center"}}>
+		<a  className="logo" href="/">
+			<div  style={{display:"flex",alignItems:"center"}}>
+
+
 
 		
 		<Image 
@@ -27,7 +30,8 @@ src={logo} alt="المركز الإستشاري المصري"/>
 			<p className="compName">المركز الإستشاري المصري</p>
 			<p className="compDet">للمحاسبة والمراجعة والخدمات الضريبية</p>
 			</div>
-		</div>
+		
+		</div>	</a>
 
 			<div>
 

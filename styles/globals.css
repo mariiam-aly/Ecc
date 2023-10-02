@@ -135,6 +135,13 @@ font-weight: 800;
 border-right: 2.5px solid #3F47CC;
 
 }
+.categs .activeCateg{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    border-right: 2.5px solid #3F47CC;
+}
 .service-data{
     height: 100vh;
     padding-top: 46px;
@@ -181,6 +188,7 @@ flex: 1;
     background-repeat: no-repeat;
     background-size: cover;
     height: 26vw;
+    min-height: 200px;
 }
 .topBckg div{
     background: linear-gradient(273deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.36) 132.79%);
@@ -249,7 +257,7 @@ h3{
 .history h3{
     margin-bottom: 0;
 }
-h1{
+h1,h2{
     color: #000;
     font-size: 48px !important;
     
@@ -285,8 +293,27 @@ border: none !important;
     border-radius: 6px;
     display: flex;
     padding:0 8px;
+    padding-right: 0;
+
     align-items: center;
 }
+.input-border:focus-within {
+border: 2px solid #1F28BE;
+}
+button:disabled{
+    opacity: 0.8;
+}
+input:focus, textarea:focus{
+    outline: none !important;
+    border: 2px solid #1F28BE !important;
+
+}
+
+#phone:focus{
+    border: none !important
+
+}
+
 .footer-img{
     position: absolute;
     bottom: -45px;
@@ -413,7 +440,10 @@ box-shadow: 0px 2px 4px 1px rgba(208, 208, 208, 0.50);
     top: -13.5vw;
     height: 80vw;
     width: 80vw;
-    right: -7vw;
+    min-width: 1000px !important;
+    min-height: 1000px !important;
+
+    right: -100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -526,7 +556,7 @@ align-items: center;
 .clients{
     text-align: center !important;
 }
-h2{
+h5{
     color: #000;
     font-size: 18px !important;
     
@@ -535,10 +565,10 @@ h2{
     letter-spacing: -0.36px !important;
     margin-bottom: 58px !important;
 }
- .goals h2{
+ .goals h5{
     margin-bottom: 52px !important; 
 }
-.clients h2{
+.clients h5{
     margin-bottom: 0 !important;
 }
 .clients .companyImages-container{
@@ -659,14 +689,19 @@ line-height: 30px;
 letter-spacing: -0.32px;
 }
 
-.contactUs h2{
+.contactUs h5{
     margin-bottom: 53px !important;
 }
 .div1-padding  h1{
     margin-bottom: 44px !important;
 
 }
-h1 span{
+.success{
+    color:  #3F47CC;
+    margin-bottom: 0 !important;
+    font-size: 18px;
+}
+h2 span, h1 span{
 border-bottom: 5px solid #3F47CC;
 }
 
@@ -850,11 +885,11 @@ margin-bottom: 6px;
     font-weight: 400;
     line-height: 22.767px; /* 162.624% */
 }
-.services h2{
+.services h5{
 
     margin-bottom: 76px;
 }
- p, button,h1,h2,h3,h4{
+ p, button,h1,h2,h5,h3,h4{
     font-family: Almarai !important;
     
 
@@ -871,7 +906,116 @@ html{
 }
 
 
+
 @media screen and (max-width: 991px) {
-   
-   
+
+    .alignVertical{
+        margin: 80px 0 !important
+    
+    }
 }
+@media screen and (max-width: 767px) {
+    .history-flex{
+        display: flex;
+        margin-top: 60px;
+    }
+    #first-line{
+        display: none;
+    }
+    .timeline{
+        flex-direction: column;
+    }
+    .history-detail {
+        display: flex;
+        flex-direction: column;
+
+    }
+  
+    .contactUs h5{
+        margin-bottom: 30px !important;
+    }
+    .contact-margin{
+        margin-bottom: 20px !important;
+ 
+    }
+    .timeline span{
+        height: -webkit-fill-available;
+        border-bottom: none ;
+        border-left: 1px solid #ECECEC;
+        width: auto;
+    }
+    .services{
+        margin-bottom: 50px;
+    }
+    .firstDiv-img{
+        display: none;
+    }
+    .alignVertical{
+        margin: 60px 0 !important;
+        
+    
+    }
+    .companyImages-container{
+        margin-top: 0;
+    }
+ }
+ @media screen and (max-width: 575px) {
+    .swiper_swiperSlide__cjumu{
+        width: 100% !important;
+    }
+    .review-txt p{
+        font-size: 16px;
+        line-height:26px
+    }
+    .usrData .usrImg{
+        height: 45px;
+        width: 45px;
+        margin-left: 10px
+    }
+    .client-name{
+        font-size: 16px;
+ 
+    }
+    .client-pos{
+        font-size: 13px;
+ 
+    }
+    .review{
+        padding: 14px;
+    }
+    .review-txt{
+        margin-top: 0;
+    }
+    .client-review{
+        margin-top: 90px;
+    }
+    .review-title p{
+        font-size: 20px;
+    }
+    .review-title{
+        height: 70px;
+    }
+    h3{
+        font-size: 18px !important;
+    }
+  h2, h1{
+    font-size: 30px !important;
+
+    }
+    .div1-padding h1{
+        margin-bottom: 12px !important;
+    }
+    h5{
+        font-size: 16px !important;
+        margin-bottom: 20px !important;
+        line-height: 32px !important;
+    }
+    .servicesBtn,  .contact{
+        font-size: 16px;
+        padding: 12px 0;
+        width: 150px;
+    }
+    .topBckg p{
+        font-size: 60px;
+    }
+ }

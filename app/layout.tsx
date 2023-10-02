@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 export const metadata: Metadata = {
 	title: {
-		default: siteConfig.name,
+		default: 'ECC',
 		template: `%s - ${siteConfig.name}`,
 	},
 	description: siteConfig.description,
