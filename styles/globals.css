@@ -908,13 +908,47 @@ html{
 
 
 @media screen and (max-width: 991px) {
+    .categs-container{
+    padding-right: 0;
+}
+.service-categ{
+    flex: 1.2;
 
+}
     .alignVertical{
         margin: 80px 0 !important
     
     }
 }
+@media screen and (max-width: 950px) {
+}
 @media screen and (max-width: 767px) {
+    .services-body{
+        flex-direction: column;
+   }
+   .categs p:hover{
+    border-right: none;
+border-bottom: 2.5px solid #3F47CC;
+   }
+    .categs p{
+margin-bottom: 0;
+    }
+    .categs{
+        border-right: none;
+    }
+    .categs .activeCateg{
+        border-right: none;
+        border-bottom: 2.5px solid #3F47CC;
+
+    }
+    .categs-container{
+        border-bottom: 1px solid #ECECEC;    }
+    .service-data{
+        border:none;    }
+    .categs{
+display: flex;
+justify-content: space-between; 
+    }
     .history-flex{
         display: flex;
         margin-top: 60px;
@@ -958,8 +992,42 @@ html{
     .companyImages-container{
         margin-top: 0;
     }
+    .categ-title{
+margin-bottom: 25px !important;
+    }
+    .service-data{
+        margin-top: 25px;
+
+        padding: 0;
+    }
+    .service-title{
+        margin-bottom: 10px;
+    }
  }
  @media screen and (max-width: 575px) {
+    .service-title, .categ-title{
+        font-size: 18px;
+    }
+    .service-subtitle{
+        font-size: 16px ;
+
+    }
+    .container-ecc ul{
+        margin-bottom: 20px;
+    }
+    .service-det,.service-subtitle2,.container-ecc li{
+        font-size: 14px !important;
+        line-height: 31px;
+    
+    }
+    .categs p{
+        white-space: nowrap;
+        margin-left: 15px;
+        padding: 0 5px;
+    }
+    .service-categ{
+        overflow: scroll;
+    }
     .swiper_swiperSlide__cjumu{
         width: 100% !important;
     }
