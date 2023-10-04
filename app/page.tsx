@@ -31,7 +31,11 @@ export default function Home() {
 
 
 			<h3>المركز الإستشاري المصري</h3>
-			<h1><span>ال</span>مركز الإستشاري المصري</h1>
+			<div>
+			<h1 className='headerMobile'><span>المر</span>كز الإستشاري المصري  </h1>	
+
+		
+			<h1 className='headerWeb'><span>ال</span>مركز الإستشاري المصري  </h1>	</div>
 			<h5>في المركز الاستشاري المصري، نقدم مجموعة شاملة من الخدمات المالية المصممة لدعم نمو أعمالك. بفريقنا الخبير بجانبك، ستتمكن من فهم القضايا المحاسبية والضريبية المعقدة، وستتمكن من اتخاذ قرارات مستنيرة لقيادة أعمالك إلى الأمام. نحن نؤمن بتقديم التميز في كل جانب من جوانب خدماتنا، وتقديم الرؤى لتعزيز الصحة المالية لأعمالك.</h5>
 			
 			<div>
@@ -236,7 +240,7 @@ src={c4} alt="Dar Al Ashaa"/>
 <p>أغسطس ١٩٩٧</p>
 
 </div>
-<div className="container-fluid ">
+<div className="container-fluid history-details" >
 
 
 <div className="row gy-5 history-detail">

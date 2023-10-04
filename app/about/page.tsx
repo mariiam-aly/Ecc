@@ -37,9 +37,13 @@ export default function AboutPage() {
 <h2>   عملائنا</h2>
 <h5>تأسست المركز الاستشاري المصري في ١٩٩٨, وقد اكتسب سمعة ممتازة في تقديم خدمات الاستشارات المالية ذات الجودة العالية. هدفنا هو تقديم حلول مبتكرة وشخصية لتحديات عملائنا المالية.</h5>
 
+
+<div className="first-company">
+
+
 <div className=" companyImages-container">
 <div className="row companyImages">
-<div className="col-md-3 col-sm-6">
+<div className="col-3">
 <Image src={c1}
 width={145}
 height={54}
@@ -65,7 +69,7 @@ src={c3} alt="Sila"/>
 width={134}
 height={144}
 src={c4} alt="Dar Al Ashaa"/>
-
+</div>
 </div>
 </div>
 </div>
