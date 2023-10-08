@@ -38,6 +38,23 @@ export default function DocsPage() {
 <p className={active==3?'activeCateg':''} onClick={()=>setActive(3)}>دراسات الجدوي</p>
 </div>
 </div>
+
+
+<ul  className="nav nav-underline">
+  <li className="nav-item">
+  <p className={active==0?'activeCateg':''} onClick={()=>setActive(0)}>دراسات الجدوي</p>
+  </li>
+  <li className="nav-item">
+  <p className={active==1?'activeCateg':''} onClick={()=>setActive(1)}>دراسات الجدوي</p>
+  </li>
+  <li className="nav-item">
+  <p className={active==2?'activeCateg':''} onClick={()=>setActive(2)}>دراسات الجدوي</p>
+  </li>
+  <li className="nav-item">
+  <p className={active==3?'activeCateg':''} onClick={()=>setActive(3)}>دراسات الجدوي</p>
+  </li>
+</ul>
+
 </div>	</div>
 {active==0?
 			<div className="service-data">

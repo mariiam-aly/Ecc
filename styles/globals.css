@@ -162,8 +162,8 @@ flex: 1;
 }
 .topBckg p{
     color: #FFF;
- 
-    font-size: 72px;
+ font-size:  calc(30px + 4vw);
+  /*  font-size: 72px;*/
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -179,7 +179,7 @@ flex: 1;
 .txt2{
     color: #FFF;
   
-    font-size: 12px !important;
+    font-size: calc(12px + 0.3vw) !important;
     font-weight: 800 !important;
 }
 .topBckg{
@@ -950,6 +950,7 @@ html{
     display: none;
 }
 #navbarMobile .socials{
+    margin-top: 1em;
     justify-content: space-between;
 }
 #navbarMobile .socials a{
@@ -1120,10 +1121,25 @@ display: none;
         text-align: start;
       
     }
+    .nav-underline{
+        display: none;
+    }
         .userNav p{
             display: inline-block;
             text-align: start;
         }
+        @media screen and (min-width: 1600px){
+
+
+            .topBckg p{
+                font-size: 7vw;
+            }
+            .txt2{
+                font-size: 1vw !important;
+
+            }
+        }
+
         @media screen and (max-width: 1056px){
             .links  a{
                 margin-left: 25px;
@@ -1210,7 +1226,36 @@ margin-bottom: 0;
         border-bottom: 2.5px solid #3F47CC;
 
     }
+    .nav-underline p{
+        color: #3D3D3D;
+    font-size: 16px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+    white-space: nowrap;
+    transition: 0.4s;
+    padding-bottom: 10px;
+    }
+    .nav-underline .activeCateg{
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        border-bottom: 2.5px solid #3F47CC;
+    }
+    .container-ecc li{
+        padding-left: 25px;
+    }
+    .nav-underline{
+        border-bottom: 1px solid #ECECEC;
+        display: block;
+        margin-bottom: 1em !important;
+        flex-wrap: nowrap !important;
+        overflow: scroll;
+    }
     .categs-container{
+        display: none;
         border-bottom: 1px solid #ECECEC;    }
     .service-data{
         border:none;    }
@@ -1375,6 +1420,7 @@ margin-bottom: 25px !important;
     }
     .div1-padding h1{
         margin-bottom: 12px !important;
+        line-height: 45px;
     }
     h5{
         font-size: 16px !important;
