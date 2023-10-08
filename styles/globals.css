@@ -1249,7 +1249,7 @@ margin-bottom: 0;
     }
     .nav-underline{
         border-bottom: 1px solid #ECECEC;
-        display: block;
+        display: flex;
         flex-direction: row !important;
         margin-bottom: 1em !important;
         flex-wrap: nowrap !important;
