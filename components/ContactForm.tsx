@@ -50,7 +50,9 @@ export default function ContactForm() {
 
 	<p>+20
 		</p>
-		<Image style={{marginRight:"8px"}}  src={egyflag} alt="Egypt flag"/>
+		<Image
+
+		style={{marginRight:"8px"}}  src={egyflag} alt="Egypt flag"/>
 
 </div>
 </div>

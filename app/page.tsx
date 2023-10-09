@@ -5,7 +5,13 @@ import c2 from '../components/Images/sun.png'
 import c3 from '../components/Images/sila.png'
 import c1 from '../components/Images/seapro.jpg'
 import Image from "next/image";
-import man from '../components/Images/man.svg'
+import service1 from '../components/Images/service1.png'
+import service2 from '../components/Images/service2.png'
+import service3 from '../components/Images/service3.png'
+import service4 from '../components/Images/service4.png'
+import service5 from '../components/Images/service5.png'
+import service6 from '../components/Images/service6.png'
+
 import menu from '../components/Images/menu.svg'
 import load from '../components/Images/load.svg'
 import clock from '../components/Images/clock.png'
@@ -57,10 +63,28 @@ export default function Home() {
 
 </div></div></div>
 <div className="col-md-4 col-sm-6  firstDiv-img">
-<div  style={{ backgroundImage: `url(${triangle.src})`}}>
-		
-	</div>
-	<Image src={fluency} alt="fluency"/>
+
+	<div className='triangle-container'>
+
+	<Image
+	
+	priority
+placeholder="blur"
+
+fill
+
+style={{objectFit:"cover"}}
+
+	src={triangle} alt="triangle"/>
+
+	
+		</div>
+	<Image
+	
+	priority
+placeholder="blur"
+
+	src={fluency} alt="fluency"/>
 </div>
 
 <div className="container-ecc first-company">
@@ -71,6 +95,8 @@ export default function Home() {
 <div className="col-3">
 <Image src={c1}
 width={145}
+placeholder="blur"
+
 height={54}
 alt="Seapro"/>
 
@@ -78,6 +104,8 @@ alt="Seapro"/>
 <div className="col-3">
 <Image src={c2}
 width={221}
+placeholder="blur"
+
 height={67}
 alt="Special universal network of oncology"/>
 
@@ -85,6 +113,8 @@ alt="Special universal network of oncology"/>
 <div className="col-3">
 <Image
 width={166}
+placeholder="blur"
+
 height={92}
 src={c3} alt="Sila"/>
 
@@ -92,6 +122,8 @@ src={c3} alt="Sila"/>
 <div className="col-3">
 <Image
 width={134}
+placeholder="blur"
+
 height={144}
 src={c4} alt="Dar Al Ashaa"/>
 </div>
@@ -101,7 +133,18 @@ src={c4} alt="Dar Al Ashaa"/>
 </div>	</div>
 
 
-<div className="services" style={{ backgroundImage: `url(${background.src})`}}>
+<div className="services" >
+
+<Image 
+src={background}
+placeholder="blur"
+fill
+
+
+style={{objectFit:"cover",zIndex:"-1"}}
+sizes="100vw"
+ alt="خدماتنا"/>
+
 <div className="container-ecc ">
 
 <h3>  خدماتنا</h3>
@@ -117,10 +160,13 @@ src={c4} alt="Dar Al Ashaa"/>
 <a href="/services">
 
 <div>
-	<Image src={man} alt="المراجعة المالية"/>
+	<Image
+	width={24}
+	height={24}
+	src={service1} alt="المراجعة المالية"/>
 </div>
 
-<p className="serviceComp"> المركز الإستشاري المصري</p>
+<p className="serviceComp"> خدماتنا</p>
 <h4 className="serviceName">المراجعة المالية</h4>
 <p className="serviceDet">يقوم فريقنا الخبير بإجراء مراجعات مالية شاملة لضمان شفافية أعمالك المالية والامتثال للقوانين واللوائح.</p>
 <button>
@@ -135,10 +181,13 @@ src={c4} alt="Dar Al Ashaa"/>
 	<a href="/services">
 
 	<div>
-	<Image src={menu} alt="الخدمات المحاسبية"/>
+	<Image
+	width={24}
+	height={24}
+	src={service3} alt="الخدمات المحاسبية"/>
 </div>
 
-<p className="serviceComp"> المركز الإستشاري المصري</p>
+<p className="serviceComp"> خدماتنا</p>
 <h4 className="serviceName">الخدمات المحاسبية</h4>
 <p className="serviceDet">نقدم مجموعة شاملة من الخدمات المحاسبية، من المحاسبة إلى التقارير المالية، مما يساعد الأعمال على البقاء منظمة ومطلعة ماليا.</p>
 <button>
@@ -153,9 +202,13 @@ src={c4} alt="Dar Al Ashaa"/>
 	<a href="/services">
 
 	<div>
-	<Image src={load} alt="تأسيس الشركات"/>
+	<Image
+	width={24}
+	height={24}
+
+	src={service5} alt="تأسيس الشركات"/>
 </div>
-<p className="serviceComp"> المركز الإستشاري المصري</p>
+<p className="serviceComp"> خدماتنا</p>
 <h4 className="serviceName">تأسيس الشركات</h4>
 <p className="serviceDet">يساعد متخصصونا في تأسيس الشركات، التنقل خلال التعقيدات القانونية والبيروقراطية لبدء عملك التجاري.</p>
 <button>
@@ -173,9 +226,13 @@ src={c4} alt="Dar Al Ashaa"/>
 	<a href="/services">
 
 	<div>
-	<Image src={man} alt="دراسات الجدوى"/>
+	<Image
+	width={24}
+	height={24}
+
+	src={service2} alt="دراسات الجدوى"/>
 </div>
-<p className="serviceComp"> المركز الإستشاري المصري</p>
+<p className="serviceComp"> خدماتنا</p>
 <h4 className="serviceName">دراسات الجدوى</h4>
 <p className="serviceDet">نجري دراسات الجدوى المفصلة التي تقيم قابلية مشروعك، مع الأخذ في الاعتبار الجوانب الاقتصادية والتقنية المحتملة.</p>
 <button>
@@ -191,10 +248,13 @@ src={c4} alt="Dar Al Ashaa"/>
 	<a href="/services">
 
 	<div>
-	<Image src={menu} alt="تمويل المشروعات"/>
+	<Image
+	width={24}
+	height={24}
+	src={service4} alt="تمويل المشروعات"/>
 </div>
 
-<p className="serviceComp"> المركز الإستشاري المصري</p>
+<p className="serviceComp"> خدماتنا</p>
 <h4 className="serviceName">تمويل المشروعات</h4>
 <p className="serviceDet">يقدم فريقنا الخبرة في تمويل المشروعات، حيث يحدد مصادر التمويل المناسبة ويساعدك في تأمين التمويل الذي تحتاجه.</p>
 <button>
@@ -211,9 +271,12 @@ src={c4} alt="Dar Al Ashaa"/>
 	<a href="/services">
 
 	<div>
-	<Image src={load} alt="الضرائب "/>
+	<Image 
+	width={24}
+	height={24}
+	src={service6} alt="الضرائب "/>
 </div>
-<p className="serviceComp"> المركز الإستشاري المصري</p>
+<p className="serviceComp"> خدماتنا</p>
 <h4 className="serviceName"> الضرائب</h4>
 <p className="serviceDet">نقدم خدمات ضريبية خبيرة، من التخطيط والامتثال إلى حل النزاعات، مما يضمن تلبية الالتزامات مع تحسين وضعك الضريبي.</p>
 <button>
@@ -227,7 +290,7 @@ src={c4} alt="Dar Al Ashaa"/>
 </div></div>
 </div>			</div>
 <div className="history container-ecc ">
-<h3>  خدماتنا</h3>
+<h3>  المركز الإستشاري المصري</h3>
 <h2 >  من نحن</h2>
 <h5>تأسست المركز الاستشاري المصري في ١٩٩٨, وقد اكتسب سمعة ممتازة في تقديم خدمات الاستشارات المالية ذات الجودة العالية. هدفنا هو تقديم حلول مبتكرة وشخصية لتحديات عملائنا المالية. يتألف فريقنا من محترفين متفانين لديهم خبرة واسعة وقادرون على تقديم حلول شاملة. نحن متخصصون في الخدمات مثل التدقيق المالي، الخدمات المحاسبية، تأسيس الشركات، الدراسات الجدوى، تمويل المشروعات، والاستشارات الضريبية. نحن ندرك أن كل عمل تجاري فريد من نوعه، ولذلك نقدم خدماتنا وفقًا لاحتياجات كل عميل، مع تقديم استراتيجيات عملية تؤدي إلى نتائج ملموسة. في المركز الاستشاري المصري، نعتبر عملائنا شركاء لنا، حيث نعمل معاً نحو هدف مشترك - نجاحك. كشركائك، نعد بتوجيهك من خلال التعقيدات المالية، وتوفير الوضوح ومساعدتك في اتخاذ القرارات المستنيرة. نتطلع إلى أن نكون شريكك الموثوق في تحقيق أهدافك المالية.</h5>
 

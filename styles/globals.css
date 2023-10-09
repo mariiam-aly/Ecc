@@ -144,7 +144,6 @@ border-right: 2.5px solid #3F47CC;
     border-right: 2.5px solid #3F47CC;
 }
 .service-data{
-    height: 100vh;
     padding-top: 46px;
     padding-right: 56px;
     border-right: 1px solid #ECECEC;
@@ -183,7 +182,7 @@ flex: 1;
     font-weight: 800 !important;
 }
 .topBckg{
-  
+  position: relative;
     width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -191,6 +190,13 @@ flex: 1;
     height: 26vw;
     min-height: 200px;
 }
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 .topBckg div{
     background: linear-gradient(273deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.36) 132.79%);
     width: 100%;
@@ -330,7 +336,7 @@ footer{
 }
 .usrData{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 width: 100%;
 text-align: start;
@@ -1122,7 +1128,7 @@ display: none;
       
     }
     .nav-underline{
-        display: none;
+        display: none !important;
     }
         .userNav p{
             display: inline-block;
@@ -1234,7 +1240,7 @@ margin-bottom: 0;
     font-weight: 400;
     margin-bottom: 0;
     white-space: nowrap;
-    transition: 0.4s;
+   
     padding-bottom: 10px;
     }
     .nav-underline .activeCateg{
@@ -1249,7 +1255,7 @@ margin-bottom: 0;
     }
     .nav-underline{
         border-bottom: 1px solid #ECECEC;
-        display: flex;
+        display: flex !important;
         flex-direction: row !important;
         margin-bottom: 1em !important;
         flex-wrap: nowrap !important;

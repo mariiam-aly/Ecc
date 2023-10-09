@@ -12,8 +12,18 @@ import message from '../../components/Images/message.png'
 export default function AboutPage() {
 	return (
 		<div>
-			<div className="topBckg" style={{ backgroundImage: `url(${office.src})`}}>
-<div>
+			<div className="topBckg" >
+
+			<Image 
+src={office}
+placeholder="blur"
+fill
+style={{objectFit:"cover"}}
+sizes="100vw"
+priority
+ alt="من نحن"/>
+
+<div className="overlay">
 <p>من نحن</p>	
 <p className="txt2">تقديم الرؤى لتعزيز الصحة المالية لأعمالك.</p>	
 
@@ -47,11 +57,15 @@ export default function AboutPage() {
 <Image src={c1}
 width={145}
 height={54}
+placeholder="blur"
+
 alt="Seapro"/>
 
 </div>
 <div className="col-3">
 <Image src={c2}
+placeholder="blur"
+
 width={221}
 height={67}
 alt="Special universal network of oncology"/>
@@ -59,6 +73,8 @@ alt="Special universal network of oncology"/>
 </div>
 <div className="col-3">
 <Image
+placeholder="blur"
+
 width={166}
 height={92}
 src={c3} alt="Sila"/>
@@ -66,6 +82,8 @@ src={c3} alt="Sila"/>
 </div>
 <div className="col-3">
 <Image
+placeholder="blur"
+
 width={134}
 height={144}
 src={c4} alt="Dar Al Ashaa"/>
@@ -99,7 +117,10 @@ src={c4} alt="Dar Al Ashaa"/>
 	<div className="goal">
 	<div className="goalBoarder">
 <div>
-<Image src={target} alt="target"/>
+<Image
+placeholder="blur"
+
+src={target} alt="target"/>
 
 <h4 className="goal-title">الأهداف</h4></div>
 <p className="goal-det">نسعى لأن نكون من افضل المكاتب فى تقديم الخدمات المالية والادارية لعملائنا على مستوى مصر و المنافسة القوية على مستوى الوطن العربى</p>
@@ -112,7 +133,10 @@ src={c4} alt="Dar Al Ashaa"/>
 
 
 	<div>
-<Image src={increase} alt="target"/>
+<Image
+placeholder="blur"
+
+src={increase} alt="target"/>
 <h4 className="goal-title">الرؤية</h4></div>
 <p className="goal-det">نسعى لأن نكون من افضل المكاتب فى تقديم الخدمات المالية والادارية لعملائنا على مستوى مصر و المنافسة القوية على مستوى الوطن العربى</p>
 </div>
@@ -123,7 +147,10 @@ src={c4} alt="Dar Al Ashaa"/>
 <div className="goalBoarder">
 
 <div>
-<Image src={message} alt="target"/>
+<Image
+placeholder="blur"
+
+src={message} alt="target"/>
 <h4 className="goal-title">الرسالة</h4></div>
 <p className="goal-det">نسعى لأن نكون من افضل المكاتب فى تقديم الخدمات المالية والادارية لعملائنا على مستوى مصر و المنافسة القوية على مستوى الوطن العربى</p>
 </div>

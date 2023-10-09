@@ -75,7 +75,8 @@ src={logo} alt="المركز الإستشاري المصري"/>
 
 		
 <Image 
-
+priority
+placeholder="blur"
 width={81}
 height={77}
 src={logo} alt="المركز الإستشاري المصري"/>

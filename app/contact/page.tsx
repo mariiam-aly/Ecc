@@ -13,8 +13,17 @@ export default function contact() {
 	return (
 		
 		<div>
-<div className="topBckg" style={{ backgroundImage: `url(${contactUs.src})`}}>
-<div>
+<div className="topBckg">
+<Image 
+src={contactUs}
+placeholder="blur"
+fill
+style={{objectFit:"cover"}}
+sizes="100vw"
+priority
+ alt="من نحن"/>
+
+<div className="overlay">
 <p>من نحن</p>	
 <p className="txt2">تقديم الرؤى لتعزيز الصحة المالية لأعمالك.</p>	
 
@@ -36,6 +45,7 @@ export default function contact() {
 <Image 
 width={26}
 height={26}
+
 src={clock} alt="اوقات العمل"/>
 
 <p className="contact-title">اوقات العمل</p>
@@ -45,6 +55,7 @@ src={clock} alt="اوقات العمل"/>
 
 <Image 
 width={26}
+
 height={26}
 src={map} alt="العنوان"/>
 
