@@ -31,7 +31,7 @@ export default function Home() {
 <div className="row">
 
 <div className="col-md-8">
-<div className="alignVertical div1-padding container-ecc">
+<div className="alignVertical div1-padding container-ecc ">
 
 
 
@@ -72,7 +72,7 @@ export default function Home() {
 placeholder="blur"
 
 fill
-
+className='background'
 style={{objectFit:"cover"}}
 
 	src={triangle} alt="triangle"/>
@@ -87,7 +87,7 @@ placeholder="blur"
 	src={fluency} alt="fluency"/>
 </div>
 
-<div className="container-ecc first-company">
+<div className="container-ecc ] first-company">
 
 
 <div className=" companyImages-container">
@@ -145,7 +145,7 @@ style={{objectFit:"cover",zIndex:"-1"}}
 sizes="100vw"
  alt="خدماتنا"/>
 
-<div className="container-ecc ">
+<div className="container-ecc service-container">
 
 <h3>  خدماتنا</h3>
 <h2 >المركز الإستشاري المصري</h2>
@@ -289,7 +289,7 @@ sizes="100vw"
 </button></a>	</div>
 </div></div>
 </div>			</div>
-<div className="history container-ecc ">
+<div className="history container-ecc service-container">
 <h3>  المركز الإستشاري المصري</h3>
 <h2 >  من نحن</h2>
 <h5>تأسست المركز الاستشاري المصري في ١٩٩٨, وقد اكتسب سمعة ممتازة في تقديم خدمات الاستشارات المالية ذات الجودة العالية. هدفنا هو تقديم حلول مبتكرة وشخصية لتحديات عملائنا المالية. يتألف فريقنا من محترفين متفانين لديهم خبرة واسعة وقادرون على تقديم حلول شاملة. نحن متخصصون في الخدمات مثل التدقيق المالي، الخدمات المحاسبية، تأسيس الشركات، الدراسات الجدوى، تمويل المشروعات، والاستشارات الضريبية. نحن ندرك أن كل عمل تجاري فريد من نوعه، ولذلك نقدم خدماتنا وفقًا لاحتياجات كل عميل، مع تقديم استراتيجيات عملية تؤدي إلى نتائج ملموسة. في المركز الاستشاري المصري، نعتبر عملائنا شركاء لنا، حيث نعمل معاً نحو هدف مشترك - نجاحك. كشركائك، نعد بتوجيهك من خلال التعقيدات المالية، وتوفير الوضوح ومساعدتك في اتخاذ القرارات المستنيرة. نتطلع إلى أن نكون شريكك الموثوق في تحقيق أهدافك المالية.</h5>

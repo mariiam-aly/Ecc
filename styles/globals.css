@@ -87,6 +87,17 @@ font-style: normal;
 font-weight: 400;
 margin-bottom: 37px ;
 }
+.service-container{
+    margin: auto;
+    max-width: 115em;
+}
+.background{
+    max-width: 98em;
+    max-height: 74em;
+}
+.active-service p{
+    color: red !important;
+}
 .service-subtitle{
     color: #000;
 margin-bottom: 0;
@@ -99,7 +110,7 @@ margin-bottom: 0;
     color: #3F47CC;
 font-size: 20px;
 font-style: normal;
-margin-bottom: 0; 
+margin-bottom: 10px; 
 
 font-weight: 700;
 }
@@ -146,6 +157,7 @@ border-right: 2.5px solid #3F47CC;
 .service-data{
     padding-top: 46px;
     padding-right: 56px;
+    text-align: center;
     border-right: 1px solid #ECECEC;
 
 }
@@ -1442,18 +1454,40 @@ margin-bottom: 25px !important;
     .topBckg p{
         font-size: 60px;
     }
-    @media screen and (max-width: 484px) {
-        .timeline span {
-            height: 147px;}
-    }
-    @media screen and (max-width: 379px) {
-        .timeline span {
-            height: 170px;}
-    }
-    @media screen and (max-width: 322px) {
-        .timeline span {
-            height: 193px;}
-    }
+  
  }
 
+ @media screen and (max-width: 484px) {
+    .timeline span {
+        height: 147px;}
+}
+@media screen and (max-width: 379px) {
+    .timeline span {
+        height: 170px;}
+}
+@media screen and (max-width: 322px) {
+    .timeline span {
+        height: 193px;}
+}
+@media screen and (min-width: 1600px) {
+    .service-subtitle2 {
+       font-size: 1.6vw;
+    
+    }
+    .container-ecc li{
+        font-size: 1.2vw;
  
+    }
+    .categs p{
+        font-size: 1vw;
+  
+    }
+    .categs .activeCateg{
+        font-size: 1.2vw;
+  
+    }
+    .categ-title{
+        font-size: 1.6vw;
+ 
+    }
+}

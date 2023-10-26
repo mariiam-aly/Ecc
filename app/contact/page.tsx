@@ -32,7 +32,7 @@ priority
 
 
 
-<div className="contactUs container-ecc " style={{marginTop:"86px"}}>
+<div className="contactUs container-ecc service-container" style={{marginTop:"86px"}}>
 <div className="container-fluid">
 
 

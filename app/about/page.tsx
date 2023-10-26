@@ -30,7 +30,7 @@ priority
 </div>
 </div>
 	
-		<div className="about container-ecc ">
+		<div className="about container-ecc service-container">
 		
 		<div className="about-header">
 
