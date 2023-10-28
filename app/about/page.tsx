@@ -8,7 +8,7 @@ import Image from "next/image";
 import target from '../../components/Images/target.png'
 import increase from '../../components/Images/increase.png'
 import message from '../../components/Images/message.png'
-
+import styles from '../../styles/About.module.css'
 export default function AboutPage() {
 	return (
 		<div>
@@ -30,9 +30,9 @@ priority
 </div>
 </div>
 	
-		<div className="about container-ecc service-container">
+		<div className=" container-ecc service-container">
 		
-		<div className="about-header">
+		<div className={styles.aboutHeader}>
 
 	
 		<h3>  المركز الإستشاري المصري</h3>
@@ -48,10 +48,10 @@ priority
 <h5>تأسست المركز الاستشاري المصري في ١٩٩٨, وقد اكتسب سمعة ممتازة في تقديم خدمات الاستشارات المالية ذات الجودة العالية. هدفنا هو تقديم حلول مبتكرة وشخصية لتحديات عملائنا المالية.</h5>
 
 
-<div className="first-company">
+<div >
 
 
-<div className=" companyImages-container">
+<div className="companyImages-container">
 <div className="row companyImages">
 <div className="col-3">
 <Image src={c1}
@@ -104,7 +104,7 @@ src={c4} alt="Dar Al Ashaa"/>
 			</div>
 </div>
 
-<div className="goals">
+<div className={styles.goals}>
 
 
 <h3>  المركز الإستشاري المصري</h3>
@@ -114,22 +114,22 @@ src={c4} alt="Dar Al Ashaa"/>
 <div className="container-fluid">
 <div className="row gy-4">
 <div className="col-md-4 col-sm-6">
-	<div className="goal">
-	<div className="goalBoarder">
+	<div className={styles.goal}>
+	<div className={styles.goalBoarder}>
 <div>
 <Image
 placeholder="blur"
 
 src={target} alt="target"/>
 
-<h4 className="goal-title">الأهداف</h4></div>
-<p className="goal-det">نسعى لأن نكون من افضل المكاتب فى تقديم الخدمات المالية والادارية لعملائنا على مستوى مصر و المنافسة القوية على مستوى الوطن العربى</p>
+<h4 className={styles.goalTitle}>الأهداف</h4></div>
+<p className={styles.goalDet}>نسعى لأن نكون من افضل المكاتب فى تقديم الخدمات المالية والادارية لعملائنا على مستوى مصر و المنافسة القوية على مستوى الوطن العربى</p>
 </div>
 	</div>
 </div>
 <div className="col-md-4 col-sm-6">
-<div className="goal">
-	<div className="goalBoarder">
+<div className={styles.goal}>
+	<div className={styles.goalBoarder}>
 
 
 	<div>
@@ -137,22 +137,22 @@ src={target} alt="target"/>
 placeholder="blur"
 
 src={increase} alt="target"/>
-<h4 className="goal-title">الرؤية</h4></div>
-<p className="goal-det">نسعى لأن نكون من افضل المكاتب فى تقديم الخدمات المالية والادارية لعملائنا على مستوى مصر و المنافسة القوية على مستوى الوطن العربى</p>
+<h4 className={styles.goalTitle}>الرؤية</h4></div>
+<p className={styles.goalDet}>نسعى لأن نكون من افضل المكاتب فى تقديم الخدمات المالية والادارية لعملائنا على مستوى مصر و المنافسة القوية على مستوى الوطن العربى</p>
 </div>
 	</div>
 </div>
 <div className="col-md-4 col-sm-6">
-<div className="goal">
-<div className="goalBoarder">
+<div className={styles.goal}>
+<div className={styles.goalBoarder}>
 
 <div>
 <Image
 placeholder="blur"
 
 src={message} alt="target"/>
-<h4 className="goal-title">الرسالة</h4></div>
-<p className="goal-det">نسعى لأن نكون من افضل المكاتب فى تقديم الخدمات المالية والادارية لعملائنا على مستوى مصر و المنافسة القوية على مستوى الوطن العربى</p>
+<h4 className={styles.goalTitle}>الرسالة</h4></div>
+<p className={styles.goalDet}>نسعى لأن نكون من افضل المكاتب فى تقديم الخدمات المالية والادارية لعملائنا على مستوى مصر و المنافسة القوية على مستوى الوطن العربى</p>
 </div>
 	</div>
 </div></div></div>

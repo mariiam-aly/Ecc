@@ -1,0 +1,207 @@
+.servicesBody{
+    display: flex;
+}
+.serviceCateg{
+    flex: 1;
+    }
+    .stickyCateg{
+        position: sticky;
+        top: 70px;
+    }
+    .categ-title{
+        color: #000;
+    font-size: 24px;
+    font-style: normal;
+    padding-top: 46px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    line-height: normal;
+    }
+    .categsContainer{
+        padding-right: 30px;
+    }
+    .categs{
+        border-right: 1px solid #ECECEC;
+    }
+
+.categs p{
+    color: #3D3D3D;
+font-size: 16px;
+cursor: pointer;
+font-style: normal;
+padding-right: 24px;
+font-weight: 400;
+transition: 0.4s;
+margin-bottom: 20px;
+line-height: 45.623px; /* 285.143% */
+}
+.categs p:hover{
+    color: #000;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+border-right: 2.5px solid #3F47CC;
+
+}
+.categs .activeCateg{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    border-right: 2.5px solid #3F47CC;
+}
+.navUnderline{
+    display: none !important;
+}
+
+.serviceData{
+    padding-top: 46px;
+    padding-right: 56px;
+    text-align: center;
+    border-right: 1px solid #ECECEC;
+
+}
+
+
+.serviceData{
+    flex: 3;
+
+}
+.serviceSubtitle2{
+    color: #3F47CC;
+font-size: 20px;
+font-style: normal;
+margin-bottom: 10px; 
+
+font-weight: 700;
+}
+
+.categTitle{
+    color: #000;
+font-size: 24px;
+font-style: normal;
+padding-top: 46px;
+font-weight: 800;
+margin-bottom: 50px;
+line-height: normal;
+}
+.categsContainer{
+    padding-right: 30px;
+}
+
+    @media screen and (min-width: 1600px) {
+
+    .categTitle{
+        font-size: 1.6vw;
+ 
+    }
+    .categs p{
+        font-size: 1vw;
+  
+    }
+    .categs .activeCateg{
+        font-size: 1.2vw;
+  
+    }
+    .serviceSubtitle2 {
+        font-size: 1.6vw;
+     
+     }
+}
+    @media screen and (max-width: 991px) {
+
+        .serviceCateg{
+         flex: 1.2;
+     
+     }
+     .categsContainer{
+        padding-right: 0;
+    }
+    
+    }
+@media screen and (max-width: 767px) {
+    .servicesBody{
+        flex-direction: column;
+   }
+   .categTitle{
+    margin-bottom: 25px !important;
+        }
+        .categsContainer{
+            display: none;
+            border-bottom: 1px solid #ECECEC;    }
+
+
+   .categs p:hover{
+    border-right: none;
+border-bottom: 2.5px solid #3F47CC;
+   }
+    .categs p{
+margin-bottom: 0;
+    }
+    .categs{
+        border-right: none;
+    }
+    .categs .activeCateg{
+        border-right: none;
+        border-bottom: 2.5px solid #3F47CC;
+    }
+    .categs{
+        display: flex;
+        justify-content: space-between; 
+            }
+  
+            .categs p{
+                white-space: nowrap;
+                margin-left: 15px;
+                padding: 0 5px;
+            }
+            .navUnderline .activeCateg{
+                color: #000;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 800;
+                border-bottom: 2.5px solid #3F47CC;
+            }
+            .navUnderline p{
+                color: #3D3D3D;
+            font-size: 16px;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 0;
+            white-space: nowrap;
+           
+            padding-bottom: 10px;
+            }
+            .navUnderline{
+                border-bottom: 1px solid #ECECEC;
+                display: flex !important;
+                flex-direction: row !important;
+                margin-bottom: 1em !important;
+                flex-wrap: nowrap !important;
+                overflow: scroll;
+            }
+            .serviceData{
+                border:none;    }
+                .serviceData{
+                    margin-top: 25px;
+            
+                    padding: 0;
+                }
+}
+
+@media screen and (max-width: 575px) {
+
+.service-title, .categTitle{
+    font-size: 18px;
+}
+.categsContainer{
+    overflow: scroll;
+}
+.service-det,.serviceSubtitle2,.container-ecc li{
+    font-size: 14px !important;
+    line-height: 31px;
+
+}
+
+}

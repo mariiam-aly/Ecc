@@ -20,7 +20,7 @@ import egyflag from '../components/Images/egyflag.svg'
 import triangle from '../components/Images/triangle.png'
 import fluency from '../components/Images/fluency.png'
 import feedback from '../components/Images/feedback.svg'
-
+import styles from '../styles/Home.module.css'
 import Swiper from '../components/Swiper'
 export default function Home() {
 	return (
@@ -31,17 +31,17 @@ export default function Home() {
 <div className="row">
 
 <div className="col-md-8">
-<div className="alignVertical div1-padding container-ecc ">
+<div className={`${styles.alignVertical} ${styles.div1Padding} container-ecc`}>
 
 
 
 
 			<h3>المركز الإستشاري المصري</h3>
 			<div>
-			<h1 className='headerMobile'><span>المر</span>كز الإستشاري المصري  </h1>	
+			<h1 className={styles.headerMobile}><span>المر</span>كز الإستشاري المصري  </h1>	
 
 		
-			<h1 className='headerWeb'><span>ال</span>مركز الإستشاري المصري  </h1>	</div>
+			<h1 className={styles.headerWeb}><span>ال</span>مركز الإستشاري المصري  </h1>	</div>
 			<h5>في المركز الاستشاري المصري، نقدم مجموعة شاملة من الخدمات المالية المصممة لدعم نمو أعمالك. بفريقنا الخبير بجانبك، ستتمكن من فهم القضايا المحاسبية والضريبية المعقدة، وستتمكن من اتخاذ قرارات مستنيرة لقيادة أعمالك إلى الأمام. نحن نؤمن بتقديم التميز في كل جانب من جوانب خدماتنا، وتقديم الرؤى لتعزيز الصحة المالية لأعمالك.</h5>
 			
 			<div>
@@ -62,7 +62,7 @@ export default function Home() {
 
 
 </div></div></div>
-<div className="col-md-4 col-sm-6  firstDiv-img">
+<div className={`${styles.firstDivImg} col-md-4 col-sm-6 `}>
 
 	<div className='triangle-container'>
 
@@ -72,7 +72,7 @@ export default function Home() {
 placeholder="blur"
 
 fill
-className='background'
+className={styles.background}
 style={{objectFit:"cover"}}
 
 	src={triangle} alt="triangle"/>
@@ -87,7 +87,7 @@ placeholder="blur"
 	src={fluency} alt="fluency"/>
 </div>
 
-<div className="container-ecc ] first-company">
+<div className="container-ecc ">
 
 
 <div className=" companyImages-container">
@@ -133,7 +133,7 @@ src={c4} alt="Dar Al Ashaa"/>
 </div>	</div>
 
 
-<div className="services" >
+<div className={styles.services} >
 
 <Image 
 src={background}
@@ -156,7 +156,7 @@ sizes="100vw"
 <div className="row gy-5">
 
 	
-<div className="col-md-4 col-sm-6  serviceDiv">
+<div className={`col-md-4 col-sm-6  ${styles.serviceDiv}`}>
 <a href="/services">
 
 <div>
@@ -166,9 +166,9 @@ sizes="100vw"
 	src={service1} alt="المراجعة المالية"/>
 </div>
 
-<p className="serviceComp"> خدماتنا</p>
-<h4 className="serviceName">المراجعة المالية</h4>
-<p className="serviceDet">يقوم فريقنا الخبير بإجراء مراجعات مالية شاملة لضمان شفافية أعمالك المالية والامتثال للقوانين واللوائح.</p>
+<p className={styles.serviceComp}> خدماتنا</p>
+<h4 className={styles.serviceName}>المراجعة المالية</h4>
+<p className={styles.serviceDet}>يقوم فريقنا الخبير بإجراء مراجعات مالية شاملة لضمان شفافية أعمالك المالية والامتثال للقوانين واللوائح.</p>
 <button>
 	اعرف المزيد
 
@@ -177,7 +177,7 @@ sizes="100vw"
 </svg>
 
 </button></a>	</div>
-	<div className="col-md-4 col-sm-6  serviceDiv">
+<div className={`col-md-4 col-sm-6  ${styles.serviceDiv}`}>
 	<a href="/services">
 
 	<div>
@@ -187,9 +187,9 @@ sizes="100vw"
 	src={service3} alt="الخدمات المحاسبية"/>
 </div>
 
-<p className="serviceComp"> خدماتنا</p>
-<h4 className="serviceName">الخدمات المحاسبية</h4>
-<p className="serviceDet">نقدم مجموعة شاملة من الخدمات المحاسبية، من المحاسبة إلى التقارير المالية، مما يساعد الأعمال على البقاء منظمة ومطلعة ماليا.</p>
+<p className={styles.serviceComp}> خدماتنا</p>
+<h4 className={styles.serviceName}>الخدمات المحاسبية</h4>
+<p className={styles.serviceDet}>نقدم مجموعة شاملة من الخدمات المحاسبية، من المحاسبة إلى التقارير المالية، مما يساعد الأعمال على البقاء منظمة ومطلعة ماليا.</p>
 <button>
 	اعرف المزيد
 
@@ -198,7 +198,7 @@ sizes="100vw"
 </svg>
 
 </button>	</a></div>
-	<div className="col-md-4 col-sm-6  serviceDiv">
+<div className={`col-md-4 col-sm-6  ${styles.serviceDiv}`}>
 	<a href="/services">
 
 	<div>
@@ -208,9 +208,9 @@ sizes="100vw"
 
 	src={service5} alt="تأسيس الشركات"/>
 </div>
-<p className="serviceComp"> خدماتنا</p>
-<h4 className="serviceName">تأسيس الشركات</h4>
-<p className="serviceDet">يساعد متخصصونا في تأسيس الشركات، التنقل خلال التعقيدات القانونية والبيروقراطية لبدء عملك التجاري.</p>
+<p className={styles.serviceComp}> خدماتنا</p>
+<h4 className={styles.serviceName}>تأسيس الشركات</h4>
+<p className={styles.serviceDet}>يساعد متخصصونا في تأسيس الشركات، التنقل خلال التعقيدات القانونية والبيروقراطية لبدء عملك التجاري.</p>
 <button>
 	اعرف المزيد
 
@@ -222,7 +222,7 @@ sizes="100vw"
 
 	
 
-	<div className="col-md-4 col-sm-6  serviceDiv">
+<div className={`col-md-4 col-sm-6  ${styles.serviceDiv}`}>
 	<a href="/services">
 
 	<div>
@@ -232,9 +232,9 @@ sizes="100vw"
 
 	src={service2} alt="دراسات الجدوى"/>
 </div>
-<p className="serviceComp"> خدماتنا</p>
-<h4 className="serviceName">دراسات الجدوى</h4>
-<p className="serviceDet">نجري دراسات الجدوى المفصلة التي تقيم قابلية مشروعك، مع الأخذ في الاعتبار الجوانب الاقتصادية والتقنية المحتملة.</p>
+<p className={styles.serviceComp}> خدماتنا</p>
+<h4 className={styles.serviceName}>دراسات الجدوى</h4>
+<p className={styles.serviceDet}>نجري دراسات الجدوى المفصلة التي تقيم قابلية مشروعك، مع الأخذ في الاعتبار الجوانب الاقتصادية والتقنية المحتملة.</p>
 <button>
 	اعرف المزيد
 
@@ -244,7 +244,7 @@ sizes="100vw"
 
 </button></a>	</div>
 
-	<div className="col-md-4 col-sm-6  serviceDiv">
+<div className={`col-md-4 col-sm-6  ${styles.serviceDiv}`}>
 	<a href="/services">
 
 	<div>
@@ -254,9 +254,9 @@ sizes="100vw"
 	src={service4} alt="تمويل المشروعات"/>
 </div>
 
-<p className="serviceComp"> خدماتنا</p>
-<h4 className="serviceName">تمويل المشروعات</h4>
-<p className="serviceDet">يقدم فريقنا الخبرة في تمويل المشروعات، حيث يحدد مصادر التمويل المناسبة ويساعدك في تأمين التمويل الذي تحتاجه.</p>
+<p className={styles.serviceComp}> خدماتنا</p>
+<h4 className={styles.serviceName}>تمويل المشروعات</h4>
+<p className={styles.serviceDet}>يقدم فريقنا الخبرة في تمويل المشروعات، حيث يحدد مصادر التمويل المناسبة ويساعدك في تأمين التمويل الذي تحتاجه.</p>
 <button>
 	اعرف المزيد
 
@@ -267,7 +267,7 @@ sizes="100vw"
 </button></a>
 	</div>
 
-	<div className="col-md-4 col-sm-6  serviceDiv">
+	<div className={`col-md-4 col-sm-6  ${styles.serviceDiv}`}>
 	<a href="/services">
 
 	<div>
@@ -276,9 +276,9 @@ sizes="100vw"
 	height={24}
 	src={service6} alt="الضرائب "/>
 </div>
-<p className="serviceComp"> خدماتنا</p>
-<h4 className="serviceName"> الضرائب</h4>
-<p className="serviceDet">نقدم خدمات ضريبية خبيرة، من التخطيط والامتثال إلى حل النزاعات، مما يضمن تلبية الالتزامات مع تحسين وضعك الضريبي.</p>
+<p className={styles.serviceComp}> خدماتنا</p>
+<h4 className={styles.serviceName}> الضرائب</h4>
+<p className={styles.serviceDet}>نقدم خدمات ضريبية خبيرة، من التخطيط والامتثال إلى حل النزاعات، مما يضمن تلبية الالتزامات مع تحسين وضعك الضريبي.</p>
 <button>
 	اعرف المزيد
 
@@ -289,16 +289,16 @@ sizes="100vw"
 </button></a>	</div>
 </div></div>
 </div>			</div>
-<div className="history container-ecc service-container">
+<div className={`${styles.history} container-ecc service-container`}>
 <h3>  المركز الإستشاري المصري</h3>
 <h2 >  من نحن</h2>
 <h5>تأسست المركز الاستشاري المصري في ١٩٩٨, وقد اكتسب سمعة ممتازة في تقديم خدمات الاستشارات المالية ذات الجودة العالية. هدفنا هو تقديم حلول مبتكرة وشخصية لتحديات عملائنا المالية. يتألف فريقنا من محترفين متفانين لديهم خبرة واسعة وقادرون على تقديم حلول شاملة. نحن متخصصون في الخدمات مثل التدقيق المالي، الخدمات المحاسبية، تأسيس الشركات، الدراسات الجدوى، تمويل المشروعات، والاستشارات الضريبية. نحن ندرك أن كل عمل تجاري فريد من نوعه، ولذلك نقدم خدماتنا وفقًا لاحتياجات كل عميل، مع تقديم استراتيجيات عملية تؤدي إلى نتائج ملموسة. في المركز الاستشاري المصري، نعتبر عملائنا شركاء لنا، حيث نعمل معاً نحو هدف مشترك - نجاحك. كشركائك، نعد بتوجيهك من خلال التعقيدات المالية، وتوفير الوضوح ومساعدتك في اتخاذ القرارات المستنيرة. نتطلع إلى أن نكون شريكك الموثوق في تحقيق أهدافك المالية.</h5>
 
-<div className='history-flex'>
+<div className={styles.historyFlex}>
 
 
-<div className="timeline">
-<span id="first-line"></span>
+<div className={styles.timeline}>
+<span id={styles.firstLine}></span>
 <p>أغسطس ١٩٩٧</p>
 <span></span>
 <p>أغسطس ١٩٩٧</p>
@@ -308,33 +308,33 @@ sizes="100vw"
 <p>أغسطس ١٩٩٧</p>
 
 </div>
-<div className="container-fluid history-details" >
+<div className={`container-fluid ${styles.historyDetails}`}>
 
 
-<div className="row gy-5 history-detail">
-<div className="col-md-3 historyDiv">
-<h4 className="historyTitle">تأسيس الشركة</h4>
-<p className="historyDet">نجري دراسات الجدوى المفصلة التي تقيم قابلية مشروعك، مع الأخذ في الاعتبار الجوانب الاقتصادية والتقنية المحتملة.</p>
+<div className={`row gy-5 ${styles.historyDetail}`}>
+<div className="col-md-3 ">
+<h4 className={styles.historyTitle}>تأسيس الشركة</h4>
+<p className={styles.historyDet}>نجري دراسات الجدوى المفصلة التي تقيم قابلية مشروعك، مع الأخذ في الاعتبار الجوانب الاقتصادية والتقنية المحتملة.</p>
 </div>
-<div className="col-md-3  historyDiv">
-<h4 className="historyTitle">تأسيس الشركة</h4>
-<p className="historyDet">نجري دراسات الجدوى المفصلة التي تقيم قابلية مشروعك، مع الأخذ في الاعتبار الجوانب الاقتصادية والتقنية المحتملة.</p>
+<div className="col-md-3  ">
+<h4 className={styles.historyTitle}>تأسيس الشركة</h4>
+<p className={styles.historyDet}>نجري دراسات الجدوى المفصلة التي تقيم قابلية مشروعك، مع الأخذ في الاعتبار الجوانب الاقتصادية والتقنية المحتملة.</p>
 </div>
-<div className="col-md-3  historyDiv">
-<h4 className="historyTitle">تأسيس الشركة</h4>
-<p className="historyDet">نجري دراسات الجدوى المفصلة التي تقيم قابلية مشروعك، مع الأخذ في الاعتبار الجوانب الاقتصادية والتقنية المحتملة.</p>
+<div className="col-md-3  ">
+<h4 className={styles.historyTitle}>تأسيس الشركة</h4>
+<p className={styles.historyDet}>نجري دراسات الجدوى المفصلة التي تقيم قابلية مشروعك، مع الأخذ في الاعتبار الجوانب الاقتصادية والتقنية المحتملة.</p>
 </div>
-<div className="col-md-3  historyDiv">
-<h4 className="historyTitle">تأسيس الشركة</h4>
-<p className="historyDet">نجري دراسات الجدوى المفصلة التي تقيم قابلية مشروعك، مع الأخذ في الاعتبار الجوانب الاقتصادية والتقنية المحتملة.</p>
+<div className="col-md-3  ">
+<h4 className={styles.historyTitle}>تأسيس الشركة</h4>
+<p className={styles.historyDet}>نجري دراسات الجدوى المفصلة التي تقيم قابلية مشروعك، مع الأخذ في الاعتبار الجوانب الاقتصادية والتقنية المحتملة.</p>
 </div>
 </div>
-</div>
-
 </div>
 
-<div className="client-review">
-<div className="review-title">
+</div>
+
+<div className={styles.clientReview}>
+<div className={styles.reviewTitle}>
 	<Image src={feedback}
 	width={33}
 	height= {25}
