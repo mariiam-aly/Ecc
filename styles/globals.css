@@ -65,6 +65,9 @@ font-size: 24px;
 font-weight: 800;
 margin-bottom: 0;
 }
+.container-ecc li{
+    text-align: start !important;
+}
 .service-det{
     color: #000;
 font-size: 20px;

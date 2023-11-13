@@ -8,6 +8,7 @@
         position: sticky;
         top: 70px;
     }
+  
     .categ-title{
         color: #000;
     font-size: 24px;
@@ -23,7 +24,15 @@
     .categs{
         border-right: 1px solid #ECECEC;
     }
-
+    .serviceList{
+        flex: 3;
+    }
+    .serviceList ul{ list-style: disc;
+        margin-bottom: 0 !important;
+}
+.serviceList li{
+    font-size: 17px !important;
+}
 .categs p{
     color: #3D3D3D;
 font-size: 16px;
@@ -69,13 +78,31 @@ border-right: 2.5px solid #3F47CC;
 }
 .serviceSubtitle2{
     color: #3F47CC;
-font-size: 20px;
+font-size: 18px;
 font-style: normal;
 margin-bottom: 10px; 
-
+text-align: start;
 font-weight: 700;
+margin-top: 2em;
 }
-
+.serviceSubtitle3{
+    color: #3D3D3D;
+    font-size: 18px;
+    font-style: normal;
+    margin-bottom: 10px; 
+    text-align: start;
+    font-weight: 500; 
+}
+.serviceSubtitle1{
+    color: black;
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 10px; 
+    text-align: start;
+    font-weight: 800;
+    margin-top: 3em ;
+    margin-bottom: 0 !important;
+}
 .categTitle{
     color: #000;
 font-size: 24px;
@@ -191,6 +218,9 @@ margin-bottom: 0;
 }
 
 @media screen and (max-width: 575px) {
+    .serviceList ul{
+        padding: 0 1em;
+    }
 
 .service-title, .categTitle{
     font-size: 18px;
