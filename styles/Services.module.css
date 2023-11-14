@@ -102,6 +102,8 @@ margin-top: 2em;
     font-weight: 800;
     margin-top: 3em ;
     margin-bottom: 0 !important;
+        scroll-margin: 100px;
+  
 }
 .categTitle{
     color: #000;
@@ -147,6 +149,10 @@ line-height: normal;
     
     }
 @media screen and (max-width: 767px) {
+    .serviceSubtitle1{
+        scroll-margin: 120px;
+
+    }
     .servicesBody{
         flex-direction: column;
    }

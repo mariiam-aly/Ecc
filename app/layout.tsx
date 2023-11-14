@@ -42,7 +42,7 @@ export default function RootLayout({
 				)}
 			>
 				<Providers themeProps={{ attribute: "class" }}>
-					<div className=" flex flex-col h-screen">
+					<div style={{height:"auto"}} className=" flex flex-col h-screen">
 						<Navbar />
 						<main >
 							{children}

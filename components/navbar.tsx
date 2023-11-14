@@ -69,6 +69,8 @@ src={logo} alt="المركز الإستشاري المصري"/>
 
 
 		<div id="navbarMobile" >
+		<a  className="logo" style={{textDecoration:"none"}} href="/">
+
 		<div  style={{display:"flex",alignItems:"center"}}>
 
 
@@ -86,7 +88,7 @@ src={logo} alt="المركز الإستشاري المصري"/>
 	<p className="compDet">للمحاسبة والمراجعة والخدمات الضريبية</p>
 	</div>
 
-</div>
+</div></a>
         <button onClick={()=>setToggle(true)}> 
 		
 		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
