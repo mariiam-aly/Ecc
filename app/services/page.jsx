@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import { title } from "@/components/primitives";
 import service from '../../components/Images/service.png'
 import {useEffect, useRef, useState, useMemo} from 'react';
@@ -9,23 +9,22 @@ import {useIsVisible} from '../../components/useIsVisible'
 import {serviceData} from '../../components/serviceData'
 export default function DocsPage() {
 	const [active,setActive]=useState(0)
-	const refs = Array.from({ length: 11 }, () => useRef(null));
 
+	const refs = useRef(serviceData.map(() => React.createRef()));
+const isVisibile=[
+	useIsVisible(refs.current[0]),
+	useIsVisible(refs.current[1]),
+	useIsVisible(refs.current[2]),
+	useIsVisible(refs.current[3]),
+	useIsVisible(refs.current[4]),
+	useIsVisible(refs.current[5]),
+	useIsVisible(refs.current[6]),
+	useIsVisible(refs.current[7]),
+	useIsVisible(refs.current[8]),
+	useIsVisible(refs.current[9]),
+	useIsVisible(refs.current[10])
 
-const isVisible=[
-	useIsVisible(refs[0] ),
-	useIsVisible(refs[1] ),
-	useIsVisible(refs[2] ),
-	useIsVisible(refs[3] ),
-	useIsVisible(refs[4] ),
-	useIsVisible(refs[5] ),
-	useIsVisible(refs[6] ),
-	useIsVisible(refs[7] ),
-	useIsVisible(refs[8] ),
-	useIsVisible(refs[9] ),
-	useIsVisible(refs[10] )
 ]
-
 
 const handleClick = (index) => {
     refs[index].current?.scrollIntoView({ behavior: 'smooth' });
@@ -66,9 +65,11 @@ sizes="100vw"
 
 
 <div className={styles.categs}>
-
 {serviceData.map((data,index)=>
-	<p key={index} className={(isVisible[index] && !isVisible[index-1]  ) ?styles.activeCateg:''} onClick={()=>handleClick(index)}> {data.title}
+
+	<p key={index} className={(isVisibile[index]  && !isVisibile[index-1]  ) ?styles.activeCateg:'' }  onClick={()=>handleClick(index)}> {data.title}
+
+
 </p>
 
 )}
@@ -83,8 +84,9 @@ sizes="100vw"
 
 
 <li key={index}>
-<p className={(isVisible[index] && !isVisible[index-1]  ) ?styles.activeCateg:''}  onClick={()=>handleClick(index)}>  {data.title}</p>
-</li>
+	 {/* 
+<p className={((useIsVisible(refs.current[index])  && !useIsVisible(refs.current[index-1])  ) )?styles.activeCateg:'' }  onClick={()=>handleClick(index)}>  {data.title}</p>
+*/}</li>
 
 )}
 
@@ -99,16 +101,14 @@ sizes="100vw"
 
 {
 
- refs.map((ref, index) => (
+serviceData.map((data, index) => (
 
 
 
 <div key={index} className={styles.serviceData}>
 <div >
-	 {/* <p>{isVisible.current[index] ? "Visible" : "Not visible"}</p>*/}
 
-
-<p ref={ref}  className={styles.serviceSubtitle1} > {serviceData[index].title} </p>
+<p ref={refs.current[index]}  className={styles.serviceSubtitle1} > {serviceData[index].title} </p>
 {serviceData[index].subTitle.map((data,index)=>
 <div key={index} >
 
