@@ -25,9 +25,19 @@ const isVisibile=[
 	useIsVisible(refs.current[10])
 
 ]
+useEffect(() => {
+console.log(isVisibile)
+isVisibile.forEach((item, index,arr) =>{
+	if(arr[index] == true){
+		setActive(index)
+	}
+})
+},[isVisibile])
+
 
 const handleClick = (index) => {
-    refs[index].current?.scrollIntoView({ behavior: 'smooth' });
+
+refs.current[index].current?.scrollIntoView({ behavior: 'smooth' });
   };
 
 	return (
@@ -67,7 +77,7 @@ sizes="100vw"
 <div className={styles.categs}>
 {serviceData.map((data,index)=>
 
-	<p key={index} className={(isVisibile[index]  && !isVisibile[index-1]  ) ?styles.activeCateg:'' }  onClick={()=>handleClick(index)}> {data.title}
+	<p key={index} className={((isVisibile[index]  && !isVisibile[index-1]  )|| (index==active && !isVisibile[index-1]) )?styles.activeCateg:'' }  onClick={()=>handleClick(index)}> {data.title}
 
 
 </p>
@@ -84,9 +94,9 @@ sizes="100vw"
 
 
 <li key={index}>
-	 {/* 
-<p className={((useIsVisible(refs.current[index])  && !useIsVisible(refs.current[index-1])  ) )?styles.activeCateg:'' }  onClick={()=>handleClick(index)}>  {data.title}</p>
-*/}</li>
+	
+<p className={((isVisibile[index]  && !isVisibile[index-1]  )|| (index==active && !isVisibile[index-1]) )?styles.activeCateg:'' }   onClick={()=>handleClick(index)}>  {data.title}</p>
+</li>
 
 )}
 
